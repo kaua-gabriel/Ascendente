@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: ae39b1b0151b91c4b93cdce79bbe66c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4871033374573904994
+    second: ceu 2_0
+  - first:
+      213: -2766224616479526409
+    second: ceu 2_1
+  - first:
+      213: -2647456830721506639
+    second: ceu 2_2
+  - first:
+      213: 2823287601445169477
+    second: ceu 2_3
+  - first:
+      213: -4470190571376898802
+    second: ceu 2_4
+  - first:
+      213: 7507465442849958635
+    second: ceu 2_5
+  - first:
+      213: 2440039176925043995
+    second: ceu 2_6
+  - first:
+      213: -1782809076892625981
+    second: ceu 2_7
+  - first:
+      213: 6440428394414400577
+    second: ceu 2_8
+  - first:
+      213: 886875599602090982
+    second: ceu 2_9
+  - first:
+      213: -5921426422423962012
+    second: ceu 2_10
+  - first:
+      213: -3575492213177810278
+    second: ceu 2_11
+  - first:
+      213: -8897936740949066261
+    second: ceu 2_12
+  - first:
+      213: -576899297800682866
+    second: ceu 2_13
+  - first:
+      213: -3830977599906729485
+    second: ceu 2_14
+  - first:
+      213: -2658280421466692470
+    second: ceu 2_15
+  - first:
+      213: -5051438841066983870
+    second: ceu 2_16
+  - first:
+      213: -7406815900590987740
+    second: ceu 2_17
+  - first:
+      213: 2062269116903293595
+    second: ceu 2_18
+  - first:
+      213: 4626043888978855839
+    second: ceu 2_19
+  - first:
+      213: 3202453821685741178
+    second: ceu 2_20
+  - first:
+      213: 7850358613446204712
+    second: ceu 2_21
+  - first:
+      213: 3862476303847865840
+    second: ceu 2_22
+  - first:
+      213: -5146568344739425757
+    second: ceu 2_23
+  - first:
+      213: -3978753806857998763
+    second: ceu 2_24
+  - first:
+      213: -4911983573732338421
+    second: ceu 2_25
+  - first:
+      213: -7568323389891464441
+    second: ceu 2_26
+  - first:
+      213: -2563976655070826670
+    second: ceu 2_27
+  - first:
+      213: -4822891953571923476
+    second: ceu 2_28
+  - first:
+      213: 113574505644877300
+    second: ceu 2_29
+  - first:
+      213: -6868379171791988338
+    second: ceu 2_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ceu 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 748
+        width: 758
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264cc8cdb03699340800000000000000
+      internalID: 4871033374573904994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_1
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 674
+        width: 630
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1fbcd0e556c99d0800000000000000
+      internalID: -2766224616479526409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 740
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2c9ae0a08524bd0800000000000000
+      internalID: -2647456830721506639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 676
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54967e67d155e2720800000000000000
+      internalID: 2823287601445169477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 678
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d87c20c51b6f1c0800000000000000
+      internalID: -4470190571376898802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 676
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beaa7944b00ef2860800000000000000
+      internalID: 7507465442849958635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d57aa14b2ccd120800000000000000
+      internalID: 2440039176925043995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_7
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3197d17903247e0800000000000000
+      internalID: -1782809076892625981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144e86a708ff06950800000000000000
+      internalID: 6440428394414400577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_9
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e38e32b8a0de4c00800000000000000
+      internalID: 886875599602090982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_10
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ebec7ba0ed2dda0800000000000000
+      internalID: -5921426422423962012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_11
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a928c50a6cc416ec0800000000000000
+      internalID: -3575492213177810278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_12
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed75d96dad248480800000000000000
+      internalID: -8897936740949066261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_13
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e820b6b25217ef7f0800000000000000
+      internalID: -576899297800682866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_14
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1b4179b22a5dac0800000000000000
+      internalID: -3830977599906729485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_15
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a842a157a04eb1bd0800000000000000
+      internalID: -2658280421466692470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_16
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e6791432fa5e9b0800000000000000
+      internalID: -5051438841066983870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_17
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4262f807e24b53990800000000000000
+      internalID: -7406815900590987740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_18
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 658
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b928740e5d6ae9c10800000000000000
+      internalID: 2062269116903293595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_19
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 644
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9783fd3862033040800000000000000
+      internalID: 4626043888978855839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_20
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 622
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76bb2398c6617c20800000000000000
+      internalID: 3202453821685741178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_21
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 622
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d93e1e09312fc60800000000000000
+      internalID: 7850358613446204712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_22
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 622
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd373cebb54a9530800000000000000
+      internalID: 3862476303847865840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_23
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 622
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322598fab57b398b0800000000000000
+      internalID: -5146568344739425757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_24
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 622
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55eee753e70a8c8c0800000000000000
+      internalID: -3978753806857998763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_25
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 622
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b055129e6f025dbb0800000000000000
+      internalID: -4911983573732338421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_26
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 622
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7033d30c9f9e7f690800000000000000
+      internalID: -7568323389891464441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_27
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 622
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25feb1611dcea6cd0800000000000000
+      internalID: -2563976655070826670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_28
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 622
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9714d2255a11db0800000000000000
+      internalID: -4822891953571923476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_29
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 622
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5e080496f739100800000000000000
+      internalID: 113574505644877300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceu 2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 1470
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8995a2988d9ea0a0800000000000000
+      internalID: -6868379171791988338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ceu 2_0: 4871033374573904994
+      ceu 2_1: -2766224616479526409
+      ceu 2_10: -5921426422423962012
+      ceu 2_11: -3575492213177810278
+      ceu 2_12: -8897936740949066261
+      ceu 2_13: -576899297800682866
+      ceu 2_14: -3830977599906729485
+      ceu 2_15: -2658280421466692470
+      ceu 2_16: -5051438841066983870
+      ceu 2_17: -7406815900590987740
+      ceu 2_18: 2062269116903293595
+      ceu 2_19: 4626043888978855839
+      ceu 2_2: -2647456830721506639
+      ceu 2_20: 3202453821685741178
+      ceu 2_21: 7850358613446204712
+      ceu 2_22: 3862476303847865840
+      ceu 2_23: -5146568344739425757
+      ceu 2_24: -3978753806857998763
+      ceu 2_25: -4911983573732338421
+      ceu 2_26: -7568323389891464441
+      ceu 2_27: -2563976655070826670
+      ceu 2_28: -4822891953571923476
+      ceu 2_29: 113574505644877300
+      ceu 2_3: 2823287601445169477
+      ceu 2_30: -6868379171791988338
+      ceu 2_4: -4470190571376898802
+      ceu 2_5: 7507465442849958635
+      ceu 2_6: 2440039176925043995
+      ceu 2_7: -1782809076892625981
+      ceu 2_8: 6440428394414400577
+      ceu 2_9: 886875599602090982
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
