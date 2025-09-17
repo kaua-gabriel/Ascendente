@@ -8,9 +8,9 @@ public class CharacterSelectionUI : MonoBehaviour
     public Button meninaButton;
     public Button meninoButton;
 
-    [Header("Auras/Outlines")]
-    public Outline meninaOutline;
-    public Outline meninoOutline;
+    [Header("Auras / Imagens de seleção")]
+    public Image meninaOutline; // pode ser Image ou Outline
+    public Image meninoOutline;
 
     [Header("Cena do jogo")]
     public string gameSceneName = "GameScene";
@@ -19,19 +19,19 @@ public class CharacterSelectionUI : MonoBehaviour
 
     void Awake()
     {
-        // Garantir que não haja nulls
+        // Verifica se os campos foram preenchidos
         if (meninaButton == null || meninoButton == null ||
             meninaOutline == null || meninoOutline == null)
         {
-            Debug.LogError("Por favor, arraste todos os botões e outlines no Inspector!");
+            Debug.LogError("Por favor, arraste todos os botões e outlines/imagens no Inspector!");
             return;
         }
 
-        // Desativa auras inicialmente
+        // Desativa as auras inicialmente
         meninaOutline.enabled = false;
         meninoOutline.enabled = false;
 
-        // Configura listeners dos botões de seleção
+        // Configura os listeners dos botões
         meninaButton.onClick.AddListener(() => SelectCharacter("Menina"));
         meninoButton.onClick.AddListener(() => SelectCharacter("Menino"));
     }
@@ -44,7 +44,7 @@ public class CharacterSelectionUI : MonoBehaviour
         PlayerPrefs.SetString("playerSelected", chosenCharacter);
         PlayerPrefs.Save();
 
-        // Atualiza a aura visual
+        // Atualiza a aura visual usando Image
         if (character == "Menina")
         {
             meninaOutline.enabled = true;
