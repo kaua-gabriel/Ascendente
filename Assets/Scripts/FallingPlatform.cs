@@ -5,13 +5,13 @@ using UnityEngine;
 public class FallingPlatform : MonoBehaviour
 {
     [Header("Timings")]
-    [SerializeField] private float fallDelay = 0.5f;    // tempo em que o player precisa ficar em cima antes de cair
-    [SerializeField] private float respawnDelay = 2f; // tempo para reaparecer
+    [SerializeField] private float fallDelay = 0f;    // cai imediatamente ao encostar
+    [SerializeField] private float respawnDelay = 2f;
 
     [Header("Physics")]
-    [SerializeField] private float fallGravity = 1f;  // gravidade aplicada quando cai
-    [SerializeField] private bool requireTopCollision = true; // s� conta se o player estiver por cima
-    [SerializeField] private float topOffset = 0.1f; // toler�ncia na checagem de cima
+    [SerializeField] private float fallGravity = 1f;
+    [SerializeField] private bool requireTopCollision = true;
+    [SerializeField] private float topOffset = 0.1f;
 
     private Rigidbody2D rb;
     private Vector3 startPosition;
@@ -22,17 +22,9 @@ public class FallingPlatform : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (rb == null)
-        {
-            Debug.LogError("FallingPlatform requer Rigidbody2D.", this);
-            enabled = false;
-            return;
-        }
-
         startPosition = transform.position;
         startRotation = transform.rotation;
 
-        // Estado inicial: parado e sem gravidade
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.gravityScale = 0f;
         rb.linearVelocity = Vector2.zero;
@@ -45,14 +37,21 @@ public class FallingPlatform : MonoBehaviour
         if (isFalling) return;
         if (!collision.gameObject.CompareTag("Player")) return;
 
-        // opcional: garantir que o player esteja vindo de cima
-        if (requireTopCollision)
-        {
-            if (collision.transform.position.y < transform.position.y + topOffset)
-                return;
-        }
+        if (requireTopCollision && !IsPlayerOnTop(collision))
+            return;
 
-        // inicia contagem somente se o player permanecer na plataforma
+        if (fallRoutine == null)
+            fallRoutine = StartCoroutine(FallDelayRoutine());
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (isFalling) return;
+        if (!collision.gameObject.CompareTag("Player")) return;
+
+        if (requireTopCollision && !IsPlayerOnTop(collision))
+            return;
+
         if (fallRoutine == null)
             fallRoutine = StartCoroutine(FallDelayRoutine());
     }
@@ -61,7 +60,6 @@ public class FallingPlatform : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Player")) return;
 
-        // se o player sair antes da queda, cancela a contagem
         if (fallRoutine != null)
         {
             StopCoroutine(fallRoutine);
@@ -80,15 +78,12 @@ public class FallingPlatform : MonoBehaviour
     {
         isFalling = true;
 
-        // habilita f�sica din�mica para ela cair
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = fallGravity;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        // espera enquanto ela cai (ou enquanto quiser que ela fique fora)
         yield return new WaitForSeconds(respawnDelay);
 
-        // resetar plataforma
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.bodyType = RigidbodyType2D.Kinematic;
@@ -98,5 +93,16 @@ public class FallingPlatform : MonoBehaviour
         transform.rotation = startRotation;
 
         isFalling = false;
+    }
+
+    // 🔥 Verifica se o player está por cima da plataforma
+    private bool IsPlayerOnTop(Collision2D collision)
+    {
+        foreach (var contact in collision.contacts)
+        {
+            if (contact.point.y > transform.position.y + topOffset)
+                return true;
+        }
+        return false;
     }
 }

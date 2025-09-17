@@ -1,48 +1,61 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pausePanel; // Painel de pause no HUD
-
+    public GameObject pausePanel;
     private bool isPaused = false;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            TogglePause();
+            if (isPaused) ResumeGame();
+            else PauseGame();
         }
     }
 
-    public void TogglePause()
+    public void PauseGame()
     {
-        isPaused = !isPaused;
+        pausePanel.SetActive(true);
+        Time.timeScale = 0f;
+        isPaused = true;
 
-        if (isPaused)
-        {
-            Time.timeScale = 0;          
-            pausePanel.SetActive(true);  
-        }
-        else
-        {
-            Time.timeScale = 1;          
-            pausePanel.SetActive(false);
-        }
+        ShowCursor(true); // cursor visível
     }
 
-    public void QuitGame()
+    public void ResumeGame()
     {
-        Time.timeScale = 1; 
-        SceneManager.LoadScene("MainMenu"); 
+        pausePanel.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
+
+        ShowCursor(false); // cursor escondido
     }
 
-
-    public void RestartGame()
+    private void ShowCursor(bool show)
     {
-        Time.timeScale = 1; 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+        Cursor.visible = show;
+        Cursor.lockState = show ? CursorLockMode.None : CursorLockMode.Locked;
     }
 
+    // 🔹 Reinicia a cena atual
+    public void RestartLevel()
+    {
+        Time.timeScale = 1f; // garante que o tempo volte ao normal
+        isPaused = false;
+        ShowCursor(false);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    // 🔹 Volta para o menu principal
+    public void QuitToMainMenu()
+    {
+        Time.timeScale = 1f; // garante que o tempo volte ao normal
+        isPaused = false;
+        ShowCursor(true);
+
+        SceneManager.LoadScene("MainMenu"); // substitua pelo nome exato da sua cena
+    }
 }

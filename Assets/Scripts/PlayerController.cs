@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Playermanager : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 4f;
     public float jumpForce = 6f;
@@ -11,7 +11,7 @@ public class Playermanager : MonoBehaviour
     private int maxJumps = 1;
     private float moveInput;
     private bool isGrounded = false;
-
+    private bool onWall;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,5 +50,8 @@ public class Playermanager : MonoBehaviour
         {
             isGrounded = true;
         }
+
+        if (collision.gameObject.CompareTag("Wall"))
+            GetComponent<Collider2D>().sharedMaterial = new PhysicsMaterial2D() { friction = 0, bounciness = 0 };
     }
 }

@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a128a15ab70ed048b64e6daeb24f721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallDelay: 0.2
+  fallDelay: 0.1
   respawnDelay: 1
   fallGravity: 5
   requireTopCollision: 1

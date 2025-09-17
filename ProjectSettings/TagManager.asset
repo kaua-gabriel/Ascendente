@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
-  - Wall
   - Pupila
+  - Wall
   layers:
   - Default
   - TransparentFX
