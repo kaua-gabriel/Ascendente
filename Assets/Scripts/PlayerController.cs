@@ -5,13 +5,19 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 4f;
     public float jumpForce = 6f;
+    public int maxJumps = 2; // pulo duplo
+
+    public PhysicsMaterial2D wallMaterial;
 
     private Rigidbody2D rb;
-    private int jumpCount;
-    private int maxJumps = 1;
+    private int jumpCount = 0;
     private float moveInput;
     private bool isGrounded = false;
-    private bool onWall;
+
+    // Buffer de chão para pulo confiável
+    private float groundRememberTime = 0.1f; // 100ms
+    private float groundRememberCounter = 0f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,28 +36,40 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
-        // Movimento horizontal normal
+        // Movimento horizontal
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-        // Reset jump count se no chão
-        if (isGrounded)
+        // Buffer de chão
+        if (groundRememberCounter > 0f)
         {
             jumpCount = 0;
+            groundRememberCounter -= Time.fixedDeltaTime;
         }
-
-        isGrounded = false; // será setado pelo OnCollisionStay2D
     }
 
     void OnCollisionStay2D(Collision2D collision)
     {
+        // Detecta chão pela tag
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            groundRememberCounter = groundRememberTime; // reseta o buffer
         }
 
+        // Detecta parede
+        if (collision.gameObject.CompareTag("Wall") && wallMaterial != null)
+        {
+            GetComponent<Collider2D>().sharedMaterial = wallMaterial;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
         if (collision.gameObject.CompareTag("Wall"))
-            GetComponent<Collider2D>().sharedMaterial = new PhysicsMaterial2D() { friction = 0, bounciness = 0 };
+        {
+            GetComponent<Collider2D>().sharedMaterial = null;
+        }
     }
 }
